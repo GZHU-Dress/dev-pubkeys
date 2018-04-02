@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/zsh
 set -e;
 
 PUBKEY_REPO=https://github.com/GZHU-Dress/gzhu-pubkeys.git;
