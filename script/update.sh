@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e;
 
-PUBKEY_REPO=https://github.com/GZHU-Dress/dev-pubkeys.git;
+PUBKEY_REPO=https://github.com/GZHU-Dress/gzhu-pubkeys.git;
 BRANCH=master;
 LOCAL_DIR=pubkeys;
 HOME="/home/gzhu"

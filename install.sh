@@ -2,7 +2,7 @@
 
 set -e;
 
-PUBKEY_REPO="https://github.com/AOSC-Dev/dev-pubkeys.git";
+PUBKEY_REPO="https://github.com/GZHU-Dress/gzhu-pubkeys.git";
 BRANCH="master";
 HOME="/home/gzhu"
 USER="gzhu"
