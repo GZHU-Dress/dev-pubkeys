@@ -1,9 +1,10 @@
 #!/bin/bash
 set -e;
 
-PUBKEY_REPO=https://github.com/GZHU-Dress/gzhu-pubkeys.git;
+PUBKEY_REPO=https://github.com/GZHU-Dress/dev-pubkeys.git;
 BRANCH=master;
 LOCAL_DIR=pubkeys;
+HOME="/home/gzhu"
 SSH_DIR=$HOME/.ssh;
 AUTHORIZED_KEYS=authorized_keys;
 TEMP_FILE=temp_keys;

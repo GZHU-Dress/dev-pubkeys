@@ -2,9 +2,14 @@
 
 set -e;
 
-PUBKEY_REPO="https://github.com/GZHU-Dress/gzhu-pubkeys.git";
+PUBKEY_REPO="https://github.com/AOSC-Dev/dev-pubkeys.git";
 BRANCH="master";
+HOME="/home/gzhu"
+USER="gzhu"
 LOCAL_DIR="pubkeys";
+
+echo $HOME;
+
 SCRIPT_INSTALL_DIR="$HOME/.update_pubkeys"
 
 pushd /tmp;
@@ -28,10 +33,10 @@ fi
 cp script/update.sh $SCRIPT_INSTALL_DIR/update.sh;
 
 echo ">>> Copying systemd files... (requires sudo)";
-sed -i "s|User=gzhu|User=$USER|g" systemd/update_pubkeys.service;
-sed -i "s|Environment=\"HOME=/home/gzhu\"|Environment=\"HOME=$HOME\"|g" systemd/update_pubkeys.service;
-sed -i "s|WorkingDirectory=/home/gzhu/.update_pubkeys|WorkingDirectory=$SCRIPT_INSTALL_DIR|g" systemd/update_pubkeys.service;
-sed -i "s|ExecStart=/home/gzhu/.update_pubkeys/update.sh|ExecStart=$SCRIPT_INSTALL_DIR/update.sh|g" systemd/update_pubkeys.service;
+sed -i "s|User=aosc|User=$USER|g" systemd/update_pubkeys.service;
+sed -i "s|Environment=\"HOME=/home/aosc\"|Environment=\"HOME=$HOME\"|g" systemd/update_pubkeys.service;
+sed -i "s|WorkingDirectory=/home/aosc/.update_pubkeys|WorkingDirectory=$SCRIPT_INSTALL_DIR|g" systemd/update_pubkeys.service;
+sed -i "s|ExecStart=/home/aosc/.update_pubkeys/update.sh|ExecStart=$SCRIPT_INSTALL_DIR/update.sh|g" systemd/update_pubkeys.service;
 
 sudo cp systemd/update_pubkeys.service /etc/systemd/system/update_pubkeys_$USER.service;
 sudo cp systemd/update_pubkeys.timer /etc/systemd/system/update_pubkeys_$USER.timer

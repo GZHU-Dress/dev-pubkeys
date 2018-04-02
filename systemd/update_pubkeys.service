@@ -3,10 +3,10 @@ Description=Download latest pubkeys
 After=network-online.target
 
 [Service]
-User=gzhu
+User=aosc
 Type=oneshot
 # Home of user
-Environment="HOME=/home/gzhu"
-WorkingDirectory=/home/gzhu/.update_pubkeys
-ExecStart=/home/gzhu/.update_pubkeys/update.sh
+Environment="HOME=/home/aosc"
+WorkingDirectory=/home/aosc/.update_pubkeys
+ExecStart=/home/aosc/.update_pubkeys/update.sh
 SuccessExitStatus=0
