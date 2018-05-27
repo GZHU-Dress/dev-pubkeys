@@ -24,14 +24,13 @@ For Linux/Unix Like User, you can install openssh for your system by package man
 
 After you get ssh keys you can [commit your public key here](authorized_keys). **Do not move or modify a public key that does not belong to you.**
 
-## How to generator GPG key.
+## How to generator GPG key
 
 For Linux/Unix Like User, you can install gnupg for your system by package manager. Then exec `gpg --gen-key` command. Also you can use GUI Applications to finished it.
 
-- [Gpg4win for Windows](https://www.gpg4win.org/)
-- [Kleoptra for Linux](https://www.kde.org/applications/utilities/kleopatra/)
-- [GPG Suite for macOS ](https://gpgtools.org/)
-- [More...](https://www.gnupg.org/download/index.html)
+- [gpg4win](https://www.gpg4win.org/)
+- [kleoptra](https://www.kde.org/applications/utilities/kleopatra/)
+- [gpgs](https://gpgtools.org/)
 
 Publish the public key to server.
 
