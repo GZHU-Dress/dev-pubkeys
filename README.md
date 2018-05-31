@@ -12,7 +12,7 @@ SSH public keys can be easily added on the server.
 
 GPG public keys can be used to verify files, encrypt or decrypt something after mutual trusted.
 
-## How to generator ssh key
+## How to generate ssh keys
 
 For Windows user, you can download the PuTTY Client.
 
@@ -24,7 +24,7 @@ For Linux/Unix Like User, you can install openssh for your system by package man
 
 After you get ssh keys you can [commit your public key here](authorized_keys). **Do not move or modify a public key that does not belong to you.**
 
-## How to generator GPG key
+## How to generate GPG keys
 
 For Linux/Unix Like User, you can install gnupg for your system by package manager. Then exec `gpg --gen-key` command. Also you can use GUI Applications to finished it.
 
