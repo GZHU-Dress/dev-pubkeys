@@ -37,3 +37,5 @@ Publish the public key to server.
 > [USTC GPG Server](https://pgp.ustc.edu.cn/)
 
 As the same you can [commit your gpg key finger here](gpg_keys) after it published on server.
+
+Add GPG keys for [Github](https://github.com/settings/keys) to verify the committing.
